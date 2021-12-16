@@ -9,8 +9,7 @@ class mainController
 		return context::SUCCESS;
 	}
 
-
-
+	
 	public static function index($request,$context){
 		
 		return context::SUCCESS;
@@ -21,6 +20,14 @@ class mainController
 		$context->param2=$request["param2"];
 		return context::SUCCESS;
 	}
+	public static function userTest($request,$context)
+	{
+		echo 'shqdghjgkekf';
+		$context->user= utilisateurTable::getUserByLoginAndPass($request["user"],$request["pwd"]);
+		echo $context->user;
+		return context::SUCCESS;
+	}
+	
 
 
 }

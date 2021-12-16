@@ -1,8 +1,8 @@
 <?php
 
 define ('HOST', 'pedago01c.univ-avignon.fr') ;
-define ('USER', ''  ) ;
-define ('PASS', '' ) ;
+define ('USER', 'uapv2101472'  ) ;
+define ('PASS', 'eoh9DW' ) ;
 define ('DB', 'etd' ) ;
 
 use Doctrine\ORM\Tools\Setup;
